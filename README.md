@@ -21,3 +21,31 @@ docker rm db-jdbi
 
 If you want to list the existing container:
 docker container list
+
+If you want to create the table, you need to create the database book-jdbi and create the table :
+
+```
+create table book
+(
+id          integer not null,
+title       varchar(100),
+page        integer,
+isbn        varchar,
+description varchar,
+price       numeric
+);
+
+alter table book
+owner to postgres;
+
+create table author
+(
+id         integer,
+first_name varchar,
+last_name  varchar
+);
+
+alter table author
+owner to postgres;
+```
+
