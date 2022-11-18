@@ -2,7 +2,7 @@
 spring:
   datasource:
     # database username
-    username: admin
+    username: postgres
     # username password
     password: 9FXmXsTcPFydjZ4bLN6o
     # JDBC URL
